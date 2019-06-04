@@ -5,15 +5,17 @@ aos是一个抽象的对象存储库
 # support list (支持列表)
 * qcloud
 * aliyun
+* local
 
 # usage (使用方式)
 
-```
+```go
 // import
 import (
   "github.com/DGHeroin/aos"
 	_ "github.com/DGHeroin/aos/qcloud"   // import the vender what you want to use
 //  _ "github.com/DGHeroin/aos/aliyun"
+//  _ "github.com/DGHeroin/aos/local"
 )
 
 func new() {
@@ -36,3 +38,24 @@ func delete() {
 }
 
 ```
+
+# Args (参数)
+
+## qcloud
+
+| name   |      Desc      |  Example |
+|----------|:-------------:|------:|
+| id |  SecretID | xxxx |
+| key |    SecretKey   |   xxx |
+
+## aliyun
+
+| name   |      Desc      |  Example |
+|----------|:-------------:|------:|
+| id |  SecretID | xxxx |
+| key |    SecretKey   |   xxx |
+| bucket |    BucketName   |   my-bucket |
+
+## local
+
+no args

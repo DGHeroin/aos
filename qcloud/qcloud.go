@@ -11,7 +11,6 @@ import (
 )
 
 func init()  {
-	// register qcloud
 	registry.RegisterVendor("qcloud", newQCloudClient)
 }
 

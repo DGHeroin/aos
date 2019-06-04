@@ -9,7 +9,6 @@ import (
 )
 
 func init()  {
-	// register qcloud
 	registry.RegisterVendor("aliyun", newAliYunClient)
 }
 

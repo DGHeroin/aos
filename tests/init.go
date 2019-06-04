@@ -6,6 +6,10 @@ import (
 )
 
 var(
+	localTest     = flag.Bool("localTest", false, "enable local test")
+	localEndpoint = flag.String("localEP", "", "local endpoint")
+	localArgs     = flag.String("localArgs", "", "local args")
+
 	qcloudTest     = flag.Bool("qcloudTest", false, "enable qcloud test")
 	qcloudEndpoint = flag.String("qcloudEP", "", "qcloud endpoint")
 	qcloudArgs     = flag.String("qcloudArgs", "", "qcloud args")
