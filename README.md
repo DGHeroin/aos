@@ -1,12 +1,12 @@
-# aos
-aos is abstract object storage
+# aos is (是什么)
+aos is abstract object storage <br>
 aos是一个抽象的对象存储库
 
-# support(支持列表)
+# support list (支持列表)
 * qcloud
 * aliyun
 
-# usage
+# usage (使用方式)
 
 ```
 // import
