@@ -7,7 +7,6 @@ import (
 
 var (
 	vendorFuncs  map[string] NewVendorFunc
-	errVendorNotSupport  = fmt.Errorf("vendor not support")
 )
 
 type NewVendorFunc func(endpoint string, uriArgs string) (aos.Client, error)
@@ -25,6 +24,6 @@ func newVendor(name string, endpoint string, args string) (aos.Client, error) {
 	if cb, ok := vendorFuncs[name]; ok {
 		return cb(endpoint, args)
 	} else {
-		return nil, errVendorNotSupport
+		return nil, fmt.Errorf("vendor(%s) not support", name)
 	}
 }
